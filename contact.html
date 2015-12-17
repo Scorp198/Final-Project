@@ -1,104 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>COMP1002 - Lesson 12</title>
-    <link rel="stylesheet" href="Content/reset.css">
-    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
-	<link rel="stylesheet" href="Content/main.css">
-  </head>
 
-<header class="masthead">
-		  <nav class="nav">
-       
-			  <ul class="nav-bar">
-				  <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li class="active"><a href="contact.html">Contact Us</a></li>
-			  </ul>
-		  </nav>
-	  </header>
-    
-    <body>
-      <main>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COMP1002 - Lesson 12</title>
+  <link rel="stylesheet" href="Content/reset.css">
+  <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Content/main.css">
+</head>
 
-  <p>Hours of Operation
-    <br> Monday to Friday: Hour to Hour
-    <br> Saturday: Hour to Hour
-    <br> Sunday:Hour to Hour
-    <br>
-  </p>
+<body>
 
-  <p>Contact Us
-    <br>
-    <strong>The Musket Company</strong>
-    <br> 10 Musket Street,
-    <br> Barrie, ON Postal Code
-    <br> (705) XXX-XXXX
-    <br> Get in touch with us quickly and easily to have your questions answered. Fill out the form below and we will get back
-    to you as soon as possible.
-    <br>
-  </p>
+  <!-- HEADER SECTION -->
+  <header class="masthead">
+    <nav class="nav">
+      <ul class="toggle">
+        <li>
+          <button id="menu-button"><i class="fa fa-bars fa-2x"></i></button>
+        </li>
+      </ul>
+      <ul id="nav-bar" class="nav-bar">
+        <li class="active"><a id="home" href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section class="formSection">
-    <form action="processform.php" method="post" id="firstForm" class="forms">
-      <fieldset class="contact">
-        <legend>Contact Form</legend>
+  <!-- Main Section -->
 
-        <div class="row formGroup">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" class="formControl" placeholder="Enter Your Email" required/>
-        </div>
-        <div class="row formGroup">
-          <label for="phone">Phone:</label>
-          <input type="text" id="phone" name="phone" class="formControl" placeholder="(XXX) XXX-XXXX" required/>
-        </div>
-        <div class="row formGroup">
-          <label for="fax">Fax:</label>
-          <input type="text" id="fax" name="fax" class="formControl" placeholder="(XXX) XXX-XXXX" required/>
-        </div>
-        <div class="row formGroup">
-          <label for="address">Address:</label>
-          <input type="text" id="address" name="address" class="formControl" placeholder="Enter Your Address Here" required/>
-        </div>
-        <div class="row formGroup">
-          <label for="city">City:</label>
-          <input type="text" id="city" name="city" class="formControl" placeholder="Enter Your City" required/>
-        </div>
-        <div class="row formGroup">
-          <label for="province">Province/State:</label>
-          <input type="text" id="province" name="province" class="formControl" placeholder="Enter Your Province/State" required/>
-        </div>
+  <div class="wrapper">
+    <main class="mainContent">
+      <p class="col-6 content left inline-block">Hours of Operation
+        <br> Monday to Friday: 8:00-9:00
+        <br> Saturday: 9:00-5:00
+        <br> Sunday: 10:00 - 4:00
+        <br>
+      </p>
 
-        <div class="row formGroup">
-          <label for="country">Country:</label>
-          <input type="text" id="country" name="country" class="formControl" placeholder="Enter Your Country" required/>
-        </div>
+      <p class="contact col-4 inline-block push-half">Contact Us
+        <br>
+        <strong>The Musket Company</strong>
+        <br> 10 Musket Street,
+        <br> Barrie, ON Postal Code
+        <br> (705) 748-8008
+        <br> Get in touch with us quickly and easily to have your questions answered. Fill out the form below and we will get
+        back to you as soon as possible.
+        <br>
+      </p>
 
-        <div class="row formGroup">
-          <label for="postal">Postal/Zip Code:</label>
-          <input type="text" id="postal" name="postal" class="formControl" placeholder="Enter Your Postal/Zip Code" required/>
-        </div>
+      <section class="formSection">
+        <form action="processform.php" method="post" id="firstForm" class="forms">
+          <fieldset class="contact">
+            <legend>Contact Form</legend>
 
-        <div class="row formGroup">
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" class="formControl" placeholder="Enter Your Subject" required/>
-        </div>
+            <div class="row formGroup">
+              <label class="email" for="email">Email:</label>
+              <input type="text" id="email" name="email" class="formControl" placeholder="Enter Your Email" required/>
+            </div>
+            <div class="row formGroup">
+              <label class="phone" for="phone">Phone:</label>
+              <input type="text" id="phone" name="phone" class="formControl" placeholder="(XXX) XXX-XXXX" required/>
+            </div>
+            <div class="row formGroup">
+              <label class="fax" for="fax">Fax:</label>
+              <input type="text" id="fax" name="fax" class="formControl" placeholder="(XXX) XXX-XXXX" required/>
+            </div>
+            <div class="row formGroup">
+              <label class="address" for="address">Address:</label>
+              <input type="text" id="address" name="address" class="formControl" placeholder="Enter Your Address Here" required/>
+            </div>
+            <div class="row formGroup">
+              <label class="city" for="city">City:</label>
+              <input type="text" id="city" name="city" class="formControl" placeholder="Enter Your City" required/>
+            </div>
+            <div class="row formGroup">
+              <label class="province" for="province">Province/State:</label>
+              <input type="text" id="province" name="province" class="formControl" placeholder="Enter Your Province/State" required/>
+            </div>
 
-        <div class="row formGroup">
-          <label for="question">Question:</label>
-          <input type="text" id="question" name="question" class="formControl" placeholder="Enter Your Question" required/>
-        </div>
-        <div class="row formGroup">
-          <input type="submit" id="submitButton" name="submitButton" class="button" />
-        </div>
+            <div class="row formGroup country">
+              <label class="country" for="country">Country:</label>
+              <input type="text" id="country" name="country" class="formControl" placeholder="Enter Your Country" required/>
+            </div>
 
-      </fieldset>
-    </form>
-  </section>
-</main>
-    </body>
+            <div class="row formGroup">
+              <label class="postal" for="postal">Postal/Zip Code:</label>
+              <input type="text" id="postal" name="postal" class="formControl" placeholder="Enter Your Postal/Zip Code" required/>
+            </div>
+
+            <div class="row formGroup">
+              <label class="subject" for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" class="formControl" placeholder="Enter Your Subject" required/>
+            </div>
+
+            <div class="row formGroup">
+              <label class="question" for="question">Question:</label>
+              <input type="text" id="question" name="question" class="formControl" placeholder="Enter Your Question" required/>
+            </div>
+            <div class="row formGroup">
+              <input type="submit" id="submitButton" name="submitButton" class="button" />
+            </div>
+
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER SECTION -->
+  <footer class="end">
+    <h4>&copy; Copyright 2015</h4>
+  </footer>
+
+</body>
+
+</html>
