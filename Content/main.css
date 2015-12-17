@@ -34,6 +34,12 @@ h2 {
  line-height: 3em;
 }
 
+.coolFont{
+  font-size: 2em;
+  line-height: 3em;
+  text-align: center;
+}
+
 h3 {
  font-size: 1.5em;
  line-height: 2.5em;
@@ -63,7 +69,6 @@ h6 {
 /*Picture Styles*/
 h2{
 	text-align: center;
-	
 }
 
 /*basic nav styles*/
