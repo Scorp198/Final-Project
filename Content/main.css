@@ -33,13 +33,6 @@ h1 {
 h2 {
  font-size: 2em;
  line-height: 3em;
- margin-top: 
-}
-
-.coolFont{
-  font-size: 2em;
-  line-height: 3em;
-  text-align: center;
 }
 
 h3 {
@@ -67,6 +60,11 @@ h6 {
  	flex-wrap: wrap;
  	justify-content:center;
 }
+.form{
+	font-size: 2em;
+    line-height: 3em;
+}
+
 
 /*Picture Styles*/
 h2{
@@ -83,48 +81,46 @@ h2{
 	background-color: black;
 
 }
-/* navigation styles for larger screens */
-@media screen and (min-width:640px) {
-	
-	
-	
-	.nav-bar {
-		list-style-type: none;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-end;
-	}
-	
-	.nav li {	
-		overflow: auto;
-	}
-	
-	.nav li:hover {
-		background-color: grey;
-	}
-	
-	.nav a {
-		display: block;
-		color: white;
-		text-decoration: none;
-		text-align: center;
-		padding-top: 0.8em;
-		width: 8em;
-		height: 2.2em;
-	}
-	
-	.nav a:hover, nav a:visited, nav a:focus {
-		color: white;
-	}
 
-	.toggle {
-		display: none;
-	}
-	
+.nav-bar {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
+	
+.nav li {	
+	overflow: auto;
+}
+	
+.nav li:hover {
+	background-color: grey;
+}
+	
+.nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 0.8em;
+	width: 8em;
+	height: 2.2em;
+}
+	
+.nav a:hover, nav a:visited, nav a:focus {
+	color: white;
+}
+	
+
 /*Putting the footer at the bottom right of the page*/
 .end{
-   position: relative; bottom: 0%; right: 0%;
+   position: absolute; bottom: 0%; right: 0%;
+}
+.productsEnd{
+	position: relative; 
+
+	text-align: right;
+	
 }
 /* contact styles for small border */
 
@@ -132,12 +128,7 @@ h2{
  margin-right: 40%;
 }
 
-/* image styles to move to side of text */
 
-.img-right {
-  float: right;
-  margin: 20px;
-}
 
 /* layout styles for column widths*/
 .container {
